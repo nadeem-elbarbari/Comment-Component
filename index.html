@@ -7,6 +7,21 @@
         <title>Comments Section</title>
     </head>
     <body>
+        <!-- User Type Toggle -->
+        <div class="user-type-toggle">
+            <div class="toggle-title">نوع المستخدم:</div>
+            <div class="toggle-options">
+                <label>
+                    <input type="radio" name="userType" value="normal" checked>
+                    عادي
+                </label>
+                <label>
+                    <input type="radio" name="userType" value="vip">
+                    مميز
+                </label>
+            </div>
+        </div>
+
         <div class="comments-container">
             <div class="comment-input">
                 <textarea class="comment-textarea" placeholder="اكتب تعليقك..."></textarea>
@@ -25,7 +40,7 @@
             <div class="comments-header">
                 <div class="comments-title">
                     <h3>التعليقات</h3>
-                    <span class="comment-count">4</span>
+                    <span class="comment-count"></span>
                 </div>
                 <div class="sort-dropdown">
                     <h3>ترتيب</h3>
@@ -34,205 +49,7 @@
             </div>
 
             <div class="comments-list">
-                <!-- Noah Pierre's comment -->
-                <div class="comment-item">
-                    <div class="avatar avatar-bg">
-                        <span
-                            style="
-                                color: white;
-                                font-weight: bold;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                height: 100%;
-                            "
-                            >N</span
-                        >
-                    </div>
-                    <div class="comment-content">
-                        <div class="comment-header">
-                            <span class="comment-author">Noah Pierre</span>
-                            <span class="comment-time">قبل 58 دقيقة</span>
-                        </div>
-                        <div class="comment-body">لا يحزنك أنك فشلت ما دمت تحاول الوقوف على قدميك من جديد</div>
-                        <div class="comment-actions">
-                            <div class="reaction-btns">
-                                <button class="action-btn">
-                                    <span class="action-icon">👍</span>
-                                    <span class="like-count">25</span>
-                                </button>
-                                <button class="action-btn">
-                                    <span class="action-icon">👎</span>
-                                    <span class="dislike-count">3</span>
-                                </button>
-                                <button class="action-btn">
-                                    <span class="action-icon">↩️</span>
-                                    رد
-                                </button>
-                            </div>
-                            <button class="action-btn more-actions">
-                                <span class="action-icon">⋯</span>
-                            </button>
-                        </div>
-
-                        <!-- vips response -->
-                        <div class="nested-comment comment-item-vip">
-                            <div class="avatar-vip avatar-bg">
-                                <img src="https://www.gifcen.com/wp-content/uploads/2022/11/anime-gif-10.gif" alt="" />
-                            </div>
-                            <div class="comment-content">
-                                <div class="comment-header">
-                                    <span class="comment-author-vip">Nadeem</span>
-                                    <span class="verified-icon"></span>
-                                    <span class="comment-time">منذ 10 دقائق</span>
-                                </div>
-                                <div class="comment-body-vip">
-                                    في عالمٍ مليء بالتحديات والفرص، يظل الأمل هو شعاع النور الذي يضيء لنا الطريق. كل يوم
-                                    هو فرصة جديدة للتعلم والنمو، وكل لحظة تمثل بداية فصل جديد في قصة حياتنا. يجب أن
-                                    نتعلم من الماضي، ولكن الأهم من ذلك أن نعيش الحاضر ونتطلع للمستقبل بعين التفاؤل
-                                    والإيمان بأننا قادرون على تحقيق كل ما نطمح إليه.
-                                </div>
-                                <div class="comment-actions">
-                                    <div class="reaction-btns">
-                                        <button class="action-btn">
-                                            <span class="action-icon">👍</span>
-                                            <span class="like-count">25</span>
-                                        </button>
-                                        <button class="action-btn">
-                                            <span class="action-icon">👎</span>
-                                            <span class="dislike-count">3</span>
-                                        </button>
-                                    </div>
-                                    <button class="action-btn more-actions">
-                                        <span class="action-icon">⋯</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment-item nested-comment">
-                            <div class="avatar avatar-bg">
-                                <span
-                                    style="
-                                        color: white;
-                                        font-weight: bold;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        height: 100%;
-                                    "
-                                    >M</span
-                                >
-                            </div>
-                            <div class="comment-content">
-                                <div class="comment-header">
-                                    <span class="comment-author">Mollie Hall</span>
-                                    <span class="comment-time">منذ 5 دقائق</span>
-                                </div>
-                                <div class="comment-body">الراجل دا بيقول كلام زي الفل 🥹</div>
-                                <div class="comment-actions">
-                                    <div class="reaction-btns">
-                                        <button class="action-btn">
-                                            <span class="action-icon">👍</span>
-                                            <span class="like-count">25</span>
-                                        </button>
-                                        <button class="action-btn">
-                                            <span class="action-icon">👎</span>
-                                            <span class="dislike-count">3</span>
-                                        </button>
-                                    </div>
-                                    <!-- More Actions Button -->
-                                    <button class="action-btn more-actions">
-                                        <span class="action-icon">⋯</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skill Sprout's comment -->
-                <div class="comment-item-vip">
-                    <div class="avatar avatar-bg">
-                        <span
-                            style="
-                                color: white;
-                                font-weight: bold;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                height: 100%;
-                            "
-                            >S</span
-                        >
-                    </div>
-                    <div class="comment-content">
-                        <div class="comment-header">
-                            <span class="comment-author-vip">Nadeem</span>
-                            <span class="verified-icon"></span>
-                            <span class="comment-time">منذ 10 أيام</span>
-                        </div>
-                        <div class="comment-body-vip">
-                            إذا بلغت القمة فوجه نظرك إلى السفح لترى من عاونك في الصعود إليها, وانظر إلى السماء ليثبت
-                            الله أقدامك عليها
-                        </div>
-                        <div class="comment-actions">
-                            <button class="action-btn">
-                                <span class="action-icon">👍</span>
-                                <span class="like-count">2</span>
-                            </button>
-                            <button class="action-btn">
-                                <span class="action-icon">👎</span>
-                                <span class="dislike-count">0</span>
-                            </button>
-                            <button class="action-btn">
-                                <span class="action-icon">↩️</span>
-                                رد
-                            </button>
-                            <button class="action-btn more-actions">
-                                <span class="action-icon">⋯</span>
-                            </button>
-                        </div>
-                        <div class="comment-item nested-comment">
-                            <div class="avatar avatar-bg">
-                                <span
-                                    style="
-                                        color: white;
-                                        font-weight: bold;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        height: 100%;
-                                    "
-                                    >M</span
-                                >
-                            </div>
-                            <div class="comment-content">
-                                <div class="comment-header">
-                                    <span class="comment-author">Mollie Hall</span>
-                                    <span class="comment-time">منذ 5 دقائق</span>
-                                </div>
-                                <div class="comment-body">
-                                    حسن الخلق يستر كثيراً من السيئات كما أنّ سوء الخلق يغطي كثيراً من الحسنات.
-                                </div>
-                                <div class="comment-actions">
-                                    <button class="action-btn">
-                                        <span class="action-icon">👍</span>
-                                        <span class="like-count">8</span>
-                                    </button>
-                                    <button class="action-btn">
-                                        <span class="action-icon">👎</span>
-                                        <span class="dislike-count">2</span>
-                                    </button>
-                                    <!-- More Actions Button -->
-                                    <button class="action-btn more-actions">
-                                        <span class="action-icon">⋯</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+          
                 <div class="show-more">المزيد<span class="show-more-icon">↓</span></div>
             </div>
         </div>

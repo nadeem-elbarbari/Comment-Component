@@ -17,6 +17,88 @@ body {
     padding: 20px;
 }
 
+/* User Type Toggle Styles */
+.user-type-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #292929;
+    padding: 15px;
+    border-radius: 12px;
+    z-index: 1000;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #444;
+    direction: ltr; /* Toggle is left-to-right for readability */
+}
+
+.toggle-title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #e4334d;
+    font-size: 14px;
+}
+
+.toggle-options {
+    display: flex;
+    gap: 15px;
+}
+
+.toggle-options label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-options input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #e4334d;
+}
+
+/* Reply form styles */
+.reply-form {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.reply-form .comment-input {
+    background-color: #333;
+    padding: 10px;
+}
+
+.reply-form .comment-textarea {
+    background-color: #444;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.reply-form .toolbar {
+    background-color: #555;
+    margin-top: 8px;
+}
+
+.reply-submit-btn {
+    background-color: #e4334d;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 5px 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.reply-cancel-btn {
+    background-color: #666;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 5px 12px;
+    margin-right: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 .comments-container {
     width: 100%;
     max-width: 1200px;
