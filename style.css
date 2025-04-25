@@ -424,22 +424,28 @@ body {
 }
 
 .comment-body {
+    display: flex;
     font-size: 17px;
     line-height: 1.4;
     margin-bottom: 10px;
     text-align: justify;
     color: #bbbbbb;
+     @media screen and (max-width: 768px) {
+        display: block;
+    }
 }
 
 .comment-body-vip {
-    font-size: 25px;
+    display: flex;
+    font-size: 22px;
     line-height: 1.7;
     margin-bottom: 10px;
     margin-left: 10px;
     text-align: justify;
     font-weight: 600;
     @media screen and (max-width: 768px) {
-        font-size: 20px;
+        font-size: 19px;
+        display: block;
     }
 }
 
